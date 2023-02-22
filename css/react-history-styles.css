@@ -1,0 +1,48 @@
+body{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 5px 20px;
+    background-color: #132b32;
+    color: #effbfe;        
+    text-align: center;
+    font-family: "Roboto Mono", Monospace;
+  }
+  figure{
+    display: inline-block;
+  }
+  img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      padding: 10px 0px;
+  }
+  .img-credit{
+    font-style: italic;
+    text-align: right;
+    font-size: 0.8em;
+  }
+  p{
+    max-width: 700px;
+    text-align: left;
+    margin: 5px auto;
+  }
+  a{
+    color: #61DBFB;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #fb8161;
+    text-decoration: none;
+  }
+  section {
+      display: block;
+      margin: 50px auto;
+  }
+  ul{
+    max-width: 700px;
+    margin: 0 auto 10px auto;
+    text-align: left;
+    line-height: 1.6;
+  }

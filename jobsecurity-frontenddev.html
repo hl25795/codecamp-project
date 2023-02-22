@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Security in Front End Development</title>
+  <link rel="stylesheet" href="css/jobsecurity-frontenddev-styles.css" />
+</head>
+<body>
+  <h1 id="title">Job Security in Front End Development</h1>
+  <p id="description">Gain insight into the job security of front-end development by surveying the realities of the field. This will help you understand the potential opportunities and risks associated with the profession.</p> 
+  <p class="comment"><center>*We are looking for someone with at least one year of front-end development experience to fill out the form.</center></p>
+  <form id="survey-form">
+    <!--Basic Info-->
+    <fieldset>
+      <label id="name-label" for="name"> Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+      <label id= "email-label" for="email"> Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+      <label id="number-label" for="number"> Years of experience you have in front-end development: <input id="number" name="year" type="number" min="1" max="100" placeholder="Enter years" required /></label>
+    </fieldset>
+    <!--Company Size-->
+    <fieldset>
+      <label for="company-size">Your latest company size as a Front-End Developer:
+        <select id="dropdown" name="company-size" required>
+          <option value="" selected="true" disabled="disabled">(select your company size)</option>
+          <option value="1">1 - 10</option>
+          <option value="2">11 - 50</option>
+          <option value="3">51 - 200</option>
+          <option value="4">201 - 500</option>
+          <option value="5">501 - 1,000</option>
+          <option value="6">1,001 - 5,000</option>
+          <option value="7">5,001 - 10,000</option>
+          <option value="8">10,001+</option>
+        </select>
+      </label>
+    </fieldset>
+    <!--Current Work-->
+    <fieldset>
+      <P class="formtext">Are you still working on front-end development?</P>
+      <label for="Y"><input id="Y" value="Y" type="radio" name="current-work" class="inline"/> Yes</label>
+      <label for="ND"><input id="ND" value="ND" type="radio" name="current-work" class="inline"/> No, shift to another development role</label>
+      <label for="NM"><input id="NM" value="NM" type="radio" name="current-work" class="inline"/> No, shift to a management role</label>
+      <label for="NO"><input id="NO" value="NO" type="radio" name="current-work" class="inline"/> No, looking for other opportunities</label>
+      <label for="N"><input id="N" value="N" type="radio" name="current-work" class="inline"/> No, others</label>
+    </fieldset>
+    <!--Job Security Level-->
+    <fieldset>
+      <P class="formtext">How do you feel about job security as a front-end developer?</P>
+      <label for="HP"><input id="HP" value="HP" type="radio" name="JS-level" class="inline"/> Highly positive (feel super secure)</label>
+      <label for="PO"><input id="PO" value="PO" type="radio" name="JS-level" class="inline"/> Positive</label>
+      <label for="NA"><input id="NA" value="NA" type="radio" name="JS-level" class="inline"/> Nature</label>
+      <label for="NE"><input id="NE" value="NE" type="radio" name="JS-level" class="inline"/> Negative</label>
+      <label for="HN"><input id="HN" value="HN" type="radio" name="JS-level" class="inline"/> Highly negative (feel super insecure)</label>
+    </fieldset>
+    <!--Factors-->
+    <fieldset>
+      <p class="formtext">What factors (may) make you feel less job security?</p>
+      <p class="comment">*Check all that apply</p>
+      <label><input type="checkbox" value="NewChange" class="inline" name="JS-factors"/>Ability to Adapt to Change and Learn New Technology</label>
+      <label><input type="checkbox" value="Culture" class="inline" name="JS-factors"/>Company/Team Culture and Vision</label>
+      <label><input type="checkbox" value="Layoffs" class="inline" name="JS-factors"/>Mass Layoffs in the Tech Industry</label>
+      <label><input type="checkbox" value="Identities" class="inline" name="JS-factors"/>Social Identities (Age, Gender, Race, etc.)</label>
+      <label><input type="checkbox" value="Language" class="inline" name="JS-factors"/>Language and Communication Barrier</label>
+      <label><input type="checkbox" value="Immigration" class="inline" name="JS-factors"/>Immigration Status</label>
+      <label><input type="checkbox" value="AI" class="inline" name="JS-factors"/>Impacted by Artificial Intelligence (AI)</label>
+    </fieldset>
+    <!--Skills-->
+    <fieldset>
+      <p class="formtext">What skills do you think are important to ensure job security or improve job security as a front-end developer? </p>
+      <p class="comment">*Check all that apply</p>
+      <label><input type="checkbox" value="FrontendSkill" class="inline" name="JS-skills"/>Solid knowledge of frontend skills (HTML, CSS, and JavaScript)</label>
+      <label><input type="checkbox" value="Frameworks" class="inline" name="JS-skills"/>Adaptation to frameworks (React, Angular, Bootstrap, etc.)</label>
+      <label><input type="checkbox" value="Design" class="inline" name="JS-skills"/>Design and aesthetic perception for mockups</label>
+      <label><input type="checkbox" value="UX" class="inline" name="JS-skills"/>Design thinking and user experience (UX)</label>
+      <label><input type="checkbox" value="Database" class="inline" name="JS-skills"/>Database design and management</label>
+      <label><input type="checkbox" value="Backend" class="inline" name="JS-skills"/>Knowledge of backend and infrastructure</label>
+      <label><input type="checkbox" value="CS" class="inline" name="JS-skills"/>Fundamentals of computer science (mathematics, data structure, algorithms)</label>
+      <label><input type="checkbox" value="Communication" class="inline" name="JS-skills"/>Communication with stakeholders</label>
+      <label><input type="checkbox" value="PM" class="inline" name="JS-skills"/>Project and time management</label>
+      <label><input type="checkbox" value="OtherProgram" class="inline" name="JS-skills"/>Other programming skills</label>
+      <label><input type="checkbox" value="Industry" class="inline" name="JS-skills"/>Knowledge of the industry and market</label>
+      <label><input type="checkbox" value="Others" class="inline" name="JS-skills"/>Others (can be addressed in the comment section below)</label>
+    </fieldset>
+    <!--Comments-->
+    <fieldset>
+      <label for="comment">Do you have any comments or suggestions for new entry-level front-end developers?
+        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Accelerate learning curve..."></textarea>
+        </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
